@@ -55,7 +55,7 @@ export class CartStore {
       this.carts[index].cartQuantity -= 1;
     }
 
-    if (this.carts[index].cartQuantity === 0) {
+    if (this.carts[index].cartQuantity === 1) {
       this.carts[index].cartQuantity = 1;
       this.isDisabled = true;
     }
